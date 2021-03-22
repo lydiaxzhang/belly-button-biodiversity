@@ -13,34 +13,52 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+      <div class="col-md-12 jumbotron text-center"
+      style="background-image: url(static/images/bacteria.jpg); background-size: cover; background-position: top; opacity: 0.8">
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: AliceBlue; text-shadow: 0 0 32px black;"><strong>Belly Button Biodiversity Dashboard</strong></h1>
+        <p style="color: AliceBlue;"><strong>Use the interactive charts below to explore the dataset</strong></p>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; border-style: dashed; border-color: DarkSlateBlue; padding: 1em">
+            Welcome to the Belly Button Biodiversity Dashboard, hosted by Prominent Microbiology Laboratories. 
+            Our mission is to discover and document the numerous baterial species that are unknown to humankind and further study those that are not well known.
+            In partnership with Improbable Beef, a start-up which researches meat-substitues, Prominenet Microbiology Laboratories has set out to discover a new bacteria that synthesizes proteins which taste like beef.
+            This dashboard showcases the data collected from study participants' navels - specifically their belly buttons.
+            Please use the below interface to select the partipant by their "Test Subject ID No." and view their demographic information, the top 10 bacteria cultures found, their frequency of belly button washing, and a visualization of the amount of bacteria cultures found per sample.
+          </p>
+        </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
-        <div class="well">
-          <h5>Test Subject ID No.:</h5>
+      <div class="col-md-4">
+        <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic; font-weight: bold; text-decoration: underline">View Participant Details</h4>
+        <div class="well" style="border-color: DarkSlateBlue">
+          <h5 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large">Test Subject ID No.:</h5>
           <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Demographic Info</h3>
+        <div class="panel panel-primary" style="border-color: DarkSlateBlue">
+          <div class="panel-heading" style="background-color: DarkSlateBlue; border-color: DarkSlateBlue">
+            <h3 class="panel-title" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: large">Demographic Info</h3>
           </div>
           <div id="sample-metadata" class="panel-body"></div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-8">
+        <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic; font-weight: bold; text-decoration: underline">View Bacteria Cultures Found</h4>
         <div id="bar"></div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-12">
+        <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic; font-weight: bold; text-decoration: underline">View Wash Frequency</h4>
         <div id="gauge"></div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
+        <h4 style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic; font-weight: bold; text-decoration: underline">View Bacteria Quantities</h4>
         <div id="bubble"></div>
       </div>
     </div>

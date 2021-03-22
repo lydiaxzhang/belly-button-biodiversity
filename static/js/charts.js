@@ -77,7 +77,8 @@ function buildCharts(sample) {
       x: xticks,
       y: yticks,
       type: "bar",
-      orientation: "h"
+      orientation: "h",
+      marker: {color: "rgb(202,160,77)"}
     }];
 
     // 9. Create the layout for the bar chart
@@ -96,7 +97,7 @@ function buildCharts(sample) {
       text: otu_labels,
       mode: "markers",
       marker: {
-        colorscale: "Earth",
+        colorscale: "Electric",
         color: otu_ids,
         size: sample_values,
       }
@@ -133,11 +134,11 @@ function buildCharts(sample) {
         axis: {range: [0, 10], dtick: "2"},
         bar: {color: "black"},
         steps: [
-          {range: [0, 2], color: "red"},
-          {range: [2, 4], color: "orange"},
-          {range: [4, 6], color: "yellow"},
-          {range: [6, 8], color: "lightgreen"},
-          {range: [8, 10], color: "green"},
+          {range: [0, 2], color: "rgb(220,217,238)"},
+          {range: [2, 4], color: "rgb(187,181,223)"},
+          {range: [4, 6], color: "rgb(138,128,199)"},
+          {range: [6, 8], color: "rgb(90,77,174)"},
+          {range: [8, 10], color: "rgb(72,61,139)"},
         ]
       }
     }];
