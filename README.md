@@ -33,3 +33,7 @@ __Figure 4 – *Gauge of Wash Frequency*__
 __Figure 5 – *Amount of Bacteria Cultures per Sample*__
 
 ![](static/images/bubble.png)
+
+
+### Access
+Access to the page can be found at https://lydiaxzhang.github.io/belly-button-biodiversity/
